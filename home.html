@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Café</title>
+    <!-- Semantic UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <style>
+      /* Custom Brown Theme */
+      body {
+        background-color: #d2b48c;
+        color: #fff;
+      }
+
+      /* Navigation Bar */
+      .custom-nav {
+        background-color: #5a3825 !important;
+        color: white !important;
+      }
+
+      .custom-nav .item {
+        color: white !important;
+      }
+
+      .custom-nav .item:hover {
+        background-color: #3e2518 !important;
+      }
+
+      /* Main Content Section */
+      .hero-section {
+        margin-top: 80px;
+      }
+
+      .ui.segment {
+        background-color: #8b5a2b !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <div class="ui fixed inverted menu custom-nav">
+      <div class="ui container">
+        <a class="header item">Cozy Corner Café</a>
+        <a class="active item">Home</a>
+        <a class="item">Menu</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ui container hero-section bottom padded">
+      <div class="ui segment">
+        <img
+          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="Cozy café interior"
+          class="ui fluid image"
+        />
+        <div class="ui center aligned segment">
+          <h1 class="ui header">Welcome to our Café</h1>
+          <p class="ui large text">
+            Enjoy the best coffee and pastries in town
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Semantic UI Script -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  </body>
+</html>
