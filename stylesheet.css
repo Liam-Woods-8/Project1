@@ -2,6 +2,9 @@ body {
     background-color: #d2b48c;
     color: #ffffff;
   }
+  h1, h2, h3 {
+    color: #5a3825;
+  }
   .ui.segment {
     background-color: #8b5a2b !important;
   }

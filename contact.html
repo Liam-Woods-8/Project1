@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- Semantic UI CSS -->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
-      />
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-      <link href="stylesheet.css" rel="stylesheet">
-  
-</head>
-<body>
-     <!-- Navigation Menu -->
-     <div class="ui fixed inverted menu nav">
-        <div class="ui container">
-          <a class="header item">Cozy Corner Café</a>
-          <!-- Desktop Navigation: horizontal & right-aligned -->
-          <div class="right menu desktop-menu">
-            <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
-            <a class="item" href="https://liam-woods-8.github.io/Project1/menu.html#">Menu</a>
-            <a class="item" href="https://liam-woods-8.github.io/Project1/about.html#>">About</a>
-            <a class="item" href="https://liam-woods-8.github.io/Project1/contact.html#>">Contact</a>
-          </div>
-  
-          <!-- Mobile Dropdown Navigation -->
-          <div class="mobile-menu">
-            <div class="ui dropdown item">
-               <i class="bars icon"></i>
-              <div class="menu">
-                <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
-                <a class="item">Menu</a>
-                <a class="item">About</a>
-                <a class="item">Contact</a>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Café</title>
+    <!-- Semantic UI CSS -->
+    <link
+      rel="S UI stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <div class="ui fixed inverted menu nav">
+      <div class="ui container">
+        <a class="header item">Cozy Corner Café</a>
+        <!-- Desktop Navigation: horizontal & right-aligned -->
+        <div class="right menu desktop-menu">
+          <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/menu.html#">Menu</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/about.html#">About</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/contact.html#">Contact</a>
+        </div>
+        <!-- Mobile Dropdown Navigation -->
+        <div class="mobile-menu">
+          <div class="ui dropdown item">
+             <i class="bars icon"></i>
+            <div class="menu">
+              <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
+              <a class="item" href="https://liam-woods-8.github.io/Project1/menu.html#">Menu</a>
+              <a class="item" href="https://liam-woods-8.github.io/Project1/about.html#">About</a>
+              <a class="item" href="https://liam-woods-8.github.io/Project1/contact.html#">Contact</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-        <!-- Footer -->
-        <div class="footer" style="margin-top:50px; padding: 20px;">
-            <div class="ui container">
-              <div class="ui horizontal inverted small divided link list">
-                <a class="item" href="#">Site Map</a>
-                <a class="item" href="#">Privacy Policy</a>
-                <a class="item" href="#">Terms and Conditions</a>
-              </div>
+    <!-- Main Content -->
+    <div class="ui container hero-section" style="margin-top: 80px;">
+        <h1 class="ui center aligned header">Contact Us</h1>
+        <div class="ui list">
+            <div class="item"><strong>Phone:</strong> (123) 456-7890</div>
+            <div class="item"><strong>Email:</strong> contact@cozycornercafe.com</div>
+            <div class="item"><strong>Address:</strong> 123 Foodie Lane, Flavor Town, FT 56789</div>
+            <div class="item"><strong>Hours:</strong></div>
+            <div class="item">Monday - Friday: 11:00 AM - 10:00 PM</div>
+            <div class="item">Saturday - Sunday: 10:00 AM - 11:00 PM</div>
+        </div>
+
+        <h2 class="ui left aligned header" style="margin-top: 30px;">Send Us a Message</h2>
+        <form class="ui form">
+            <div class="field">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your Name">
             </div>
-          </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="field">
+                <label>Message</label>
+                <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button class="ui button primary" type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="ui inverted vertical footer segmen" style="margin-top:50px; padding: 20px;">
+      <div class="ui container">
+        <div class="ui horizontal inverted small divided link list">
+          <a class="item" href="#">Site Map</a>
+          <a class="item" href="#">Privacy Policy</a>
+          <a class="item" href="#">Terms and Conditions</a>
+        </div>
+      </div>
+    </div>
+
     <script>
-        $('.ui.dropdown').dropdown();
-      </script>
-</body>
+      $('.ui.dropdown').dropdown();
+    </script>
+  </body>
 </html>
