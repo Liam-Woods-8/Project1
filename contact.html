@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Semantic UI CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+      />
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+      <link href="stylesheet.css" rel="stylesheet">
+  
+</head>
+<body>
+     <!-- Navigation Menu -->
+     <div class="ui fixed inverted menu nav">
+        <div class="ui container">
+          <a class="header item">Cozy Corner Café</a>
+          <!-- Desktop Navigation: horizontal & right-aligned -->
+          <div class="right menu desktop-menu">
+            <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
+            <a class="item" href="https://liam-woods-8.github.io/Project1/menu.html#">Menu</a>
+            <a class="item" href="https://liam-woods-8.github.io/Project1/about.html#>">About</a>
+            <a class="item" href="https://liam-woods-8.github.io/Project1/contact.html#>">Contact</a>
+          </div>
+  
+          <!-- Mobile Dropdown Navigation -->
+          <div class="mobile-menu">
+            <div class="ui dropdown item">
+               <i class="bars icon"></i>
+              <div class="menu">
+                <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
+                <a class="item">Menu</a>
+                <a class="item">About</a>
+                <a class="item">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Footer -->
+        <div class="footer" style="margin-top:50px; padding: 20px;">
+            <div class="ui container">
+              <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Site Map</a>
+                <a class="item" href="#">Privacy Policy</a>
+                <a class="item" href="#">Terms and Conditions</a>
+              </div>
+            </div>
+          </div>
+    <script>
+        $('.ui.dropdown').dropdown();
+      </script>
+</body>
+</html>

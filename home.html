@@ -11,41 +11,8 @@
     />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <style>
-      body {
-        background-color: #d2b48c;
-        color: #ffffff;
-      }
-      .ui.segment {
-        background-color: #8b5a2b !important;
-      }
-      .nav,
-      .footer {
-        background-color: #5a3825 !important;
-      }
-      .ui.menu {
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-      }
-      /* By default, show desktop menu and hide mobile menu */
-      .desktop-menu {
-        display: block;
-      }
-      .mobile-menu {
-        display: none;
-      }
-      /* On mobile screens, hide desktop menu and show mobile dropdown */
-      @media (max-width: 768px) {
-        .desktop-menu {
-          display: none !important;
-        }
-        .mobile-menu {
-          display: block !important;
-        }
-      }
-    </style>
+    <link href="stylesheet.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- Navigation Menu -->
@@ -54,17 +21,18 @@
         <a class="header item">Cozy Corner Café</a>
         <!-- Desktop Navigation: horizontal & right-aligned -->
         <div class="right menu desktop-menu">
-          <a class="item">Home</a>
-          <a class="item">Menu</a>
-          <a class="item">About</a>
-          <a class="item">Contact</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/menu.html#">Menu</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/about.html#>">About</a>
+          <a class="item" href="https://liam-woods-8.github.io/Project1/contact.html#>">Contact</a>
         </div>
+
         <!-- Mobile Dropdown Navigation -->
         <div class="mobile-menu">
           <div class="ui dropdown item">
              <i class="bars icon"></i>
             <div class="menu">
-              <a class="item">Home</a>
+              <a class="item" href="https://liam-woods-8.github.io/Project1/home.html#">Home</a>
               <a class="item">Menu</a>
               <a class="item">About</a>
               <a class="item">Contact</a>
