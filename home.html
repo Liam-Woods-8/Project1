@@ -17,16 +17,35 @@
       .ui.segment {
         background-color: #8b5a2b !important;
       }
-      .nav, .footer{
+      .nav,
+      .footer {
         background-color: #5a3825 !important;
+      }
+      .ui.menu {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .ui.menu {
+          flex-direction: column;
+          text-align: center;
+        }
+        .ui.container {
+          padding: 10px;
+        }
+        .hero-section {
+          margin-top: 80px;
+        }
       }
     </style>
   </head>
 
   <body>
-
     <!-- Navigation Menu -->
-    <div class="ui fixed inverted menu nav">
+    <div class="ui inverted menu nav">
       <div class="ui container">
         <a class="header item">Cozy Corner Café</a>
         <a class="item">Home</a>
@@ -37,10 +56,10 @@
     </div>
 
     <!-- Main Content -->
-    <div class="ui container hero-section" style="margin-top: 80px;">
+    <div class="ui container hero-section">
       <div class="ui segment">
         <img
-          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+          src="bigimagecafe.jpeg"
           alt="Cozy café interior"
           class="ui fluid image"
         />
@@ -54,47 +73,34 @@
     </div>
 
     <!-- Gallery Section -->
-    <div class="ui container" style="margin-top:50px;">
-        <h2 class="ui dividing header" style="color: #5a3825;">Our Gallery</h2>
-        <div class="ui stackable three column grid">
-          <div class="column">
-            <div class="ui segment">
-              <!-- Updated Artisan Coffee image -->
-              <img
-                src="coffee.jpg"
-                alt="Artisan Coffee"
-                class="ui fluid image"
-              />
-              <h3 class="ui header center aligned inverted">Artisan Coffee</h3>
-            </div>
+    <div class="ui container" style="margin-top: 50px">
+      <h2 class="ui dividing header" style="color: #5a3825">Our Gallery</h2>
+      <div class="ui stackable three column grid">
+        <div class="column">
+          <div class="ui segment">
+            <!-- Updated Artisan Coffee image -->
+            <img src="coffee.jpg" alt="Artisan Coffee" class="ui fluid image" />
+            <h3 class="ui header center aligned inverted">Artisan Coffee</h3>
           </div>
-          <div class="column">
-            <div class="ui segment">
-              <!-- Changed Fresh Pastries image to display a macaron -->
-              <img
-                src="mac.jpg"
-                alt="Macaron"
-                class="ui fluid image"
-              />
-              <h3 class="ui header center aligned inverted">Macaron</h3>
-            </div>
+        </div>
+        <div class="column">
+          <div class="ui segment">
+            <!-- Changed Fresh Pastries image to display a macaron -->
+            <img src="mac.jpg" alt="Macaron" class="ui fluid image" />
+            <h3 class="ui header center aligned inverted">Macaron</h3>
           </div>
-          <div class="column">
-            <div class="ui segment">
-              <img
-                src="cozy.jpg"
-                alt="Cozy Ambience"
-                class="ui fluid image"
-              />
-              <h3 class="ui header center aligned inverted">Cozy Ambience</h3>
-            </div>
+        </div>
+        <div class="column">
+          <div class="ui segment">
+            <img src="cozy.jpg" alt="Cozy Ambience" class="ui fluid image" />
+            <h3 class="ui header center aligned inverted">Cozy Ambience</h3>
           </div>
         </div>
       </div>
-      
+    </div>
 
     <!-- Footer -->
-    <div class="footer" style="margin-top:50px; padding: 20px;">
+    <div class="footer" style="margin-top: 50px; padding: 20px">
       <div class="ui container">
         <div class="ui horizontal inverted small divided link list">
           <a class="item" href="#">Site Map</a>
